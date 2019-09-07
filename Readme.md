@@ -9,7 +9,6 @@ yarn add @charliewilco/territory
 ```ts
 import fromEntries from "@charliewilco/territory";
 
-
 const object = territory(new Map([["one", 1], ["two", 2]]))
 
 // { "one": 1, "two": 2 }

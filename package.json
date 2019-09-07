@@ -12,5 +12,8 @@
     "jest": "^24.9.0",
     "ts-jest": "^24.0.2",
     "typescript": "^3.6.2"
-  }
+  },
+  "description": "fromEntries ponyfill",
+  "repository": "charliewilco/territory",
+  "author": "Charles ⚡️ <charlespeters42@gmail.com> (charlespeters.net)",
 }
