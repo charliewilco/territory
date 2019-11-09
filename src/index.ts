@@ -4,8 +4,8 @@ interface IObjectMap<T> {
   [K: string]: T;
 }
 
-export const territoryReduced = <K extends string, U>(
-  iterable: Map<K, U>,
+export const fromEntriesReduced = <K extends string, U>(
+  iterable: Map<K, U>
 ): IObjectMap<U> =>
   [...iterable].reduce((obj: IObjectMap<U>, [key, val]) => {
     obj[key] = val;
@@ -13,7 +13,7 @@ export const territoryReduced = <K extends string, U>(
   }, {});
 
 export default function territory<K extends string, U>(
-  iterable: Map<K, U>,
+  iterable: Map<K, U>
 ): IObjectMap<U> {
   const object: IObjectMap<U> = {};
 
@@ -22,9 +22,4 @@ export default function territory<K extends string, U>(
   }
 
   return object;
-
-  return [...iterable].reduce((obj: IObjectMap<U>, [key, val]) => {
-    obj[key] = val;
-    return obj;
-  }, {});
 }
