@@ -1,6 +1,9 @@
 {
 	"name": "@charliewilco/territory",
 	"version": "0.0.1",
+	"description": "fromEntries ponyfill",
+	"repository": "charliewilco/territory",
+	"author": "Charlie ⚡️ <charliewilc0@pm.me> (charliewil.co)",
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",
 	"license": "MIT",
@@ -20,8 +23,5 @@
 	},
 	"prettier": {
 		"useTabs": true
-	},
-	"description": "fromEntries ponyfill",
-	"repository": "charliewilco/territory",
-	"author": "Charlie ⚡️ <charliewilc0@pm.me> (charliewil.co)"
+	}
 }
