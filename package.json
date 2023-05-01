@@ -1,23 +1,27 @@
 {
-  "name": "@charliewilco/territory",
-  "version": "0.0.1",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "license": "MIT",
-  "scripts": {
-    "build": "tsc",
-    "test": "jest"
-  },
-  "devDependencies": {
-    "@types/jest": "^24.0.18",
-    "jest": "^24.9.0",
-    "ts-jest": "^24.0.2",
-    "typescript": "^3.6.2"
-  },
-  "jest": {
-    "preset": "ts-jest"
-  },
-  "description": "fromEntries ponyfill",
-  "repository": "charliewilco/territory",
-  "author": "Charles ⚡️ <charlespeters42@gmail.com> (charlespeters.net)"
+	"name": "@charliewilco/territory",
+	"version": "0.0.1",
+	"description": "fromEntries ponyfill",
+	"repository": "charliewilco/territory",
+	"author": "Charlie ⚡️ <charliewilc0@pm.me> (charliewil.co)",
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc",
+		"test": "jest"
+	},
+	"devDependencies": {
+		"@types/jest": "^29.5.1",
+		"jest": "^29.5.0",
+		"prettier": "^2.8.8",
+		"ts-jest": "^29.1.0",
+		"typescript": "^5.0.4"
+	},
+	"jest": {
+		"preset": "ts-jest"
+	},
+	"prettier": {
+		"useTabs": true
+	}
 }

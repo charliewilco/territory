@@ -1,6 +1,6 @@
 name: Node CI
 
-on: [push,pull_request]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -8,16 +8,14 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [18.x, 20.x]
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install Yarn
-        run: npm i -g yarn
       - name: Install deps and build package
         run: yarn install --frozen-lockfile
       - name: Build
